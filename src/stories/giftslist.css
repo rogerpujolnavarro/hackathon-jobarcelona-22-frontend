@@ -5,3 +5,42 @@
     box-sizing: border-box;
     transition: all ease-in-out 250ms;
 }
+
+h1 {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+main.gifts {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-gifts {
+    width: 100%;
+    padding: 2rem;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media (max-width: 840px) {
+    h1 {
+        text-align: center;
+    }
+
+    .list-gifts {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 414px) {
+
+    main.gifts,
+    .list-gifts {
+        padding: 0.5rem;
+    }
+}

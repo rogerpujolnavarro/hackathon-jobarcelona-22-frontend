@@ -4,12 +4,11 @@
     flex-direction: column;
     overflow: hidden;
     border-radius: 1rem;
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: 30vw;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
     padding: 1rem 2rem;
     cursor: pointer;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 10px 0px;
 }
 
 .card:hover {

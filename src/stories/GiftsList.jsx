@@ -4,10 +4,10 @@ import './giftslist.css'
 
 export const GiftsList = ({ backgroundColor, color, title, gifts }) => {
 	return (
-		<main className="gifts-list" style={{ backgroundColor, color }}>
+		<main className="gifts" style={{ backgroundColor, color }}>
 			<h1>{title}</h1>
 			{gifts.length ? (
-				<div className="card-categories">
+				<div className="list-gifts">
 					{gifts.map((gift, index) => (
 						<Card
 							key={index}
@@ -32,7 +32,7 @@ GiftsList.propTypes = {
 }
 
 GiftsList.defaultProps = {
-	backgroundColor: '#fff',
+	backgroundColor: '#f8f8f8',
 	color: '#212529',
 	gifts: [],
 }
