@@ -18,8 +18,8 @@ Badge.propTypes = {
 }
 
 Badge.defaultProps = {
-	backgroundColor: '#f8f9fa',
-	color: '#212529',
+	backgroundColor: '#198754',
+	color: '#f8f9fa',
 	size: 'md',
 	onClick: undefined,
 }
