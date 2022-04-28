@@ -5,12 +5,14 @@ import './card.css'
 export const Card = ({ backgroundColor, border, borderColor, color, title, description, tags }) => {
 	return (
 		<div
-			className={`card`}
+			className="card"
 			style={{ backgroundColor, border: `${border}px solid`, borderColor, color }}
-			onClick={() => {}}
+			onClick={(e) => {
+				console.log('Action on click', e)
+			}}
 		>
 			<h3>{title}</h3>
-			<p>{description}</p>
+			<p className="card-body">{description}</p>
 			<div className="card-categories">
 				{tags.map((tag, index) => (
 					<Badge key={index} label={tag} />
@@ -22,7 +24,7 @@ export const Card = ({ backgroundColor, border, borderColor, color, title, descr
 
 Card.propTypes = {
 	backgroundColor: PropTypes.string,
-	border: PropTypes.number,
+	border: PropTypes.oneOf([0, 1, 2]),
 	borderColor: PropTypes.string,
 	color: PropTypes.string,
 	title: PropTypes.string.isRequired,
