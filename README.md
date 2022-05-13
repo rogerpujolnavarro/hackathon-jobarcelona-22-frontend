@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 💻 Hackathon JOBarcelona'22 (Roger Pujol)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> [Nuwe.io](https://nuwe.io/challenge/jobarcelona-22-front-end) challange frontend. Library of components for a visualization of the different groups of gifts in horizontal scroll mode (for PC) and a list for the mobile and tablet version.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+Component with a title and a group of gifts containing the following information:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Title
+- Description
+- Group tags
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The component is responsive:
 
-### `npm test`
+- Adopt a horizontal scrolling mode for PC
+- Adopt list mode for Mobile and Tablet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clicking on each group of gifts allows you to execute an action (for now undefined).
 
-### `npm run build`
+The example proposed for the challenge:
+![Screenshot challange example](./docs/library.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **GiftsList component**
+>asdasdasdsad
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Badge component**
+> El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código. 
 
-### `npm run eject`
+### **Card component**
+> La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You should have installed at least node version 16.14 ([Node.js](https://nodejs.org/en/download/)) and git version 2.36 ([Git](https://git-scm.com/downloads/)).  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository into your projects directory:
+```
+    git clone https://github.com/rogerpujolnavarro/hackathon-jobarcelona-22-frontend.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install the dependencies within the project directory:
+```
+    cd hackathon-jobarcelona-22-frontend
+    npm i 
+```
 
-## Learn More
+Run Storybook project to see all components:
+```
+    npm run storybook
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run an example webapp using components of Storybook in React:
+```
+    npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License 
+MIT License
 
-### Code Splitting
+Copyright (c) 2022 Roger Pujol Navarro
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Analyzing the Bundle Size
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
