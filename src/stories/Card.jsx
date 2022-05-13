@@ -1,43 +1,48 @@
 import PropTypes from 'prop-types'
-import { Badge } from './Badge'
+// import { Badge } from './Badge'
 import './card.css'
 
-export const Card = ({ backgroundColor, border, borderColor, color, title, description, tags }) => {
+export const Card = ({
+	title,
+	description,
+	backgroundColor,
+	borderWidth,
+	active,
+	darkMode,
+	children,
+	onClick,
+}) => {
 	return (
 		<div
-			className="card"
-			style={{ backgroundColor, border: `${border}px solid`, borderColor, color }}
-			onClick={(e) => {
-				console.log('Action on click', e)
+			className={`card${active ? ' card-active' : ''}${darkMode ? ' card-dark' : ''}`}
+			style={{
+				backgroundColor: `${backgroundColor}88`,
+				border: `${backgroundColor} ${borderWidth}px solid`,
 			}}
+			onClick={onClick}
 		>
 			<h3>{title}</h3>
 			<p className="card-body">{description}</p>
-			<div className="card-categories">
-				{tags.map((tag, index) => (
-					<Badge key={index} label={tag} />
-				))}
-			</div>
+			<div className="card-categories">{children}</div>
 		</div>
 	)
 }
 
 Card.propTypes = {
-	backgroundColor: PropTypes.string,
-	border: PropTypes.oneOf([0, 1, 2]),
-	borderColor: PropTypes.string,
-	color: PropTypes.string,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
-	tags: PropTypes.array,
+	backgroundColor: PropTypes.string,
+	borderWidth: PropTypes.oneOf([0, 1, 2, 3]),
+	active: PropTypes.bool,
+	darkMode: PropTypes.bool,
+	children: PropTypes.element.isRequired,
 	onClick: PropTypes.func,
 }
 
 Card.defaultProps = {
-	backgroundColor: '#f8f9fa',
-	border: 1,
-	borderColor: '#212529',
-	color: '#212529',
-	tags: [],
+	backgroundColor: '#dee2e8',
+	borderWidth: 1,
+	active: false,
+	darkMode: false,
 	onClick: undefined,
 }

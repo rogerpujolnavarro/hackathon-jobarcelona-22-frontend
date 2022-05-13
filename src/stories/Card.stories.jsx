@@ -1,7 +1,8 @@
 import { Card } from './Card'
+import { Badge } from './Badge'
 
 export default {
-	title: "JOBarcelona'22/Card",
+	title: "JOBarcelona'22/GiftsList Components/Card",
 	component: Card,
 }
 
@@ -12,17 +13,26 @@ Default.args = {
 	title: 'Default title card',
 	description:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
-	tags: ['Adventure sports', 'Books'],
+	children: (
+		<>
+			<Badge label="# Tag 1" {...Badge.args} />
+			<Badge label="# Tag 2" {...Badge.args} />
+		</>
+	),
 }
 
-export const Active = Template.bind({})
-Active.args = {
-	title: 'Default active title card',
+export const Success = Template.bind({})
+Success.args = {
+	title: 'Success card',
 	description:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
-	tags: ['Adventure sports', 'Books'],
-	backgroundColor: '#f2daff',
-	borderColor: '#ac57da',
+	backgroundColor: '#158754',
+	children: (
+		<>
+			<Badge label="# Tag 1" {...Badge.args} />
+			<Badge label="# Tag 2" {...Badge.args} />
+		</>
+	),
 }
 
 export const Dark = Template.bind({})
@@ -30,19 +40,26 @@ Dark.args = {
 	title: 'Title Card Dark',
 	description:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
-	tags: ['Travel', 'Family', 'Nature'],
-	backgroundColor: '#21252999',
-	color: '#f8f9fa',
-	borderColor: '#212529',
+	darkMode: true,
+	children: (
+		<>
+			<Badge label="# Tag 1" {...Badge.args} />
+			<Badge label="# Tag 2" {...Badge.args} />
+		</>
+	),
 }
 
-export const ActiveDark = Template.bind({})
-ActiveDark.args = {
-	title: 'Title Card ActiveDark',
+export const Warning = Template.bind({})
+Warning.args = {
+	title: 'Warning card',
 	description:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
-	tags: ['Travel', 'Family', 'Nature'],
-	backgroundColor: '#4f1d6a99',
-	color: '#f2daff',
-	borderColor: '#4f1d6a',
+	backgroundColor: '#ffc107',
+	border: 2,
+	children: (
+		<>
+			<Badge label="# Tag 1" backgroundColor="#ffc107" color="#000" {...Badge.args} />
+			<Badge label="# Tag 2" backgroundColor="#ffc107" color="#000" {...Badge.args} />
+		</>
+	),
 }
