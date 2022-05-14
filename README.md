@@ -19,7 +19,7 @@ The component is responsive:
 Clicking on each group of gifts allows you to execute an action (for now undefined).
 
 The example proposed for the challenge:
-![Screenshot challange example](./docs/library.png)
+![Screenshot challange example](https://i.ibb.co/p1H2vpj/library.png)
 
 ## Components
 
