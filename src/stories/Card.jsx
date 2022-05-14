@@ -25,7 +25,7 @@ export const Card = ({
 			<p className="card-body">{description}</p>
 			<div className="card-categories">
 				{tags.map((tag, index) => (
-					<Badge key={index} label={tag.label} />
+					<Badge key={index} {...tag} />
 				))}
 			</div>
 		</div>

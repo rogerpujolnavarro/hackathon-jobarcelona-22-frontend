@@ -8,6 +8,7 @@
     padding: 1rem 2rem;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 10px 0px;
+    min-width: 30vw;
 
 }
 
@@ -34,5 +35,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
