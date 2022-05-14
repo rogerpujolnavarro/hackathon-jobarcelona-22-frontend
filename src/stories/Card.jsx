@@ -12,7 +12,6 @@ export const Card = ({
 	darkMode,
 	onClick,
 }) => {
-	console.log(tags)
 	return (
 		<div
 			className={`card${active ? ' card-active' : ''}${darkMode ? ' card-dark' : ''}`}

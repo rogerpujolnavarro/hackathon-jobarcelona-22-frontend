@@ -5,9 +5,6 @@
     justify-content: space-between;
     overflow: hidden;
     border-radius: 1rem;
-    /* min-width: -moz-fit-content;
-min-width: fit-content; */
-    max-width: 30vw;
     padding: 1rem 2rem;
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 10px 0px;
