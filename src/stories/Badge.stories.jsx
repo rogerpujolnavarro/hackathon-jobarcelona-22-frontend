@@ -9,6 +9,12 @@ export default {
 
 const Template = (args) => <Badge {...args} />
 
+export const Default = Template.bind({})
+Default.args = {
+	label: 'Badge',
+	size: 'md',
+}
+
 export const Medium = Template.bind({})
 Medium.args = {
 	label: 'Badge',

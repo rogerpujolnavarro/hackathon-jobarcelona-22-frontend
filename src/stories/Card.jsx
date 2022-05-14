@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types'
-// import { Badge } from './Badge'
+import { Badge } from './Badge'
 import './card.css'
 
 export const Card = ({
 	title,
 	description,
+	tags,
 	backgroundColor,
 	borderWidth,
 	active,
 	darkMode,
-	children,
 	onClick,
 }) => {
+	console.log(tags)
 	return (
 		<div
 			className={`card${active ? ' card-active' : ''}${darkMode ? ' card-dark' : ''}`}
@@ -23,7 +24,11 @@ export const Card = ({
 		>
 			<h3>{title}</h3>
 			<p className="card-body">{description}</p>
-			<div className="card-categories">{children}</div>
+			<div className="card-categories">
+				{tags.map((tag, index) => (
+					<Badge key={index} label={tag.label} />
+				))}
+			</div>
 		</div>
 	)
 }
@@ -31,11 +36,11 @@ export const Card = ({
 Card.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
+	tags: PropTypes.array.isRequired,
 	backgroundColor: PropTypes.string,
 	borderWidth: PropTypes.oneOf([0, 1, 2, 3]),
 	active: PropTypes.bool,
 	darkMode: PropTypes.bool,
-	children: PropTypes.element.isRequired,
 	onClick: PropTypes.func,
 }
 
