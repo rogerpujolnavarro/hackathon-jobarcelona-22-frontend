@@ -15,12 +15,11 @@ main.gifts {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    overflow-x: auto;
 }
 
 .list-gifts {
-    width: 100%;
     padding: 2rem;
-    overflow-x: auto;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -33,7 +32,6 @@ main.gifts {
 
     .list-gifts {
         flex-direction: column;
-        overflow-x: hidden;
     }
 }
 

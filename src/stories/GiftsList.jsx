@@ -9,12 +9,7 @@ export const GiftsList = ({ backgroundColor, color, title, gifts }) => {
 			{gifts.length ? (
 				<div className="list-gifts">
 					{gifts.map((gift, index) => (
-						<Card
-							key={index}
-							title={gift.title}
-							description={gift.description}
-							tags={gift.tags}
-						/>
+						<Card key={index} {...gift} />
 					))}
 				</div>
 			) : (
