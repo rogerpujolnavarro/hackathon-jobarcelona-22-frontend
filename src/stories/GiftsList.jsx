@@ -4,8 +4,8 @@ import './giftslist.css'
 
 export const GiftsList = ({ backgroundColor, color, title, gifts }) => {
 	return (
-		<main className="gifts" style={{ backgroundColor, color }}>
-			<h1>{title}</h1>
+		<div className="gifts" style={{ backgroundColor, color }}>
+			<h1 className="title-gift">{title}</h1>
 			{gifts.length ? (
 				<div className="list-gifts">
 					{gifts.map((gift, index) => (
@@ -15,7 +15,7 @@ export const GiftsList = ({ backgroundColor, color, title, gifts }) => {
 			) : (
 				<p>There are not gifts</p>
 			)}
-		</main>
+		</div>
 	)
 }
 

@@ -6,16 +6,17 @@
     transition: all ease-in-out 250ms;
 }
 
-h1 {
+.title-gift {
     margin: 2rem 0;
     text-align: left;
 }
 
-main.gifts {
+.gifts {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     overflow-x: auto;
+    height: 100%;
 }
 
 .list-gifts {
@@ -26,7 +27,7 @@ main.gifts {
 }
 
 @media (max-width: 840px) {
-    h1 {
+    .title-gift {
         text-align: center;
     }
 
@@ -37,7 +38,7 @@ main.gifts {
 
 @media (max-width: 414px) {
 
-    main.gifts,
+    .gifts,
     .list-gifts {
         padding: 0.5rem;
     }
