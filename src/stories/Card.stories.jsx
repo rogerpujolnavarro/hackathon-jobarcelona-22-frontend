@@ -38,7 +38,8 @@ Dark.args = {
 	title: 'Title Card Dark',
 	description:
 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
-	darkMode: true,
+	backgroundColor: '#21252b',
+	color: '#f7f9fb',
 	tags: [
 		{ ...BadgeStories.Default.args, label: '# Tag 1' },
 		{ ...BadgeStories.Default.args, label: '# Tag 2' },
@@ -58,4 +59,12 @@ Warning.args = {
 		{ ...BadgeStories.Default.args, label: '# Tag 2' },
 		{ ...BadgeStories.Default.args, label: '# Tag 3' },
 	],
+}
+export const Active = Template.bind({})
+Active.args = {
+	title: 'Title Card Active',
+	description:
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tincidunt turpis, at eleifend nulla vulputate non. Donec varius tincidunt libero. Quisque eu hendrerit ante. Nullam sed turpis tristique, viverra turpis eu, hendrerit ante. Donec quis venenatis lorem, vel accumsan urna. Sed tempor tellus ut libero egestas, sit amet vulputate lorem fermentum. Duis pulvinar lacus id justo dictum sollicitudin. Quisque consectetur ut erat eget viverra.',
+	active: true,
+	tags: [{ ...BadgeStories.Default.args, label: '# Tag 1' }],
 }

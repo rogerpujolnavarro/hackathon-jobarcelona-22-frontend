@@ -8,16 +8,17 @@ export const Card = ({
 	tags,
 	backgroundColor,
 	borderWidth,
+	color,
 	active,
-	darkMode,
 	onClick,
 }) => {
 	return (
 		<div
-			className={`card${active ? ' card-active' : ''}${darkMode ? ' card-dark' : ''}`}
+			className={`card${active ? ' card-active' : ''}`}
 			style={{
 				backgroundColor: `${backgroundColor}88`,
 				border: `${backgroundColor} ${borderWidth}px solid`,
+				color,
 			}}
 			onClick={onClick}
 		>
@@ -38,15 +39,15 @@ Card.propTypes = {
 	tags: PropTypes.array.isRequired,
 	backgroundColor: PropTypes.string,
 	borderWidth: PropTypes.oneOf([0, 1, 2, 3]),
+	color: PropTypes.string,
 	active: PropTypes.bool,
-	darkMode: PropTypes.bool,
 	onClick: PropTypes.func,
 }
 
 Card.defaultProps = {
 	backgroundColor: '#dee2e8',
 	borderWidth: 1,
+	color: '#21252b',
 	active: false,
-	darkMode: false,
 	onClick: undefined,
 }
