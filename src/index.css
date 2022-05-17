@@ -1,0 +1,18 @@
+header,
+footer {
+    background-color: blueviolet;
+    color: beige;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
