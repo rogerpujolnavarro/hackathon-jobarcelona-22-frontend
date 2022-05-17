@@ -23,14 +23,34 @@ The example proposed for the challenge:
 
 ## Components
 
-### **GiftsList component**
->asdasdasdsad
-
 ### **Badge component**
-> El nombre, la descripción y el uso de este módulo me parecen atractivos. Es muy probable que utilice este módulo en este momento. Solo necesito escanear la API para asegurarme de que haga exactamente lo que necesito y que se integre fácilmente en mi base de código. 
+> Badge component for tags or labeling. The customizables parameters are:
+> - backgroundColor: string with color for background
+> - color: string witho color for text
+> - size: string with one of these options <code>sm</code>,<code>md</code> or <code>lg</code>
+> - label: string for text content
 
 ### **Card component**
-> La sección de API debe detallar los objetos y funciones del módulo, sus firmas, tipos de devolución, devoluciones de llamada y eventos en detalle. Los tipos deben incluirse donde no sean obvios. Deben dejarse claras las advertencias.
+> Card component with a title, text and a list of tags. The customizables parameters are:
+> - title: string
+> - description: string
+> - tags: list or array of tags to include in card (may include parameters of Badge component)
+> - backgroundColor: string with color for background
+> -	borderWidth: number between 0 and 3
+> - color: string witho color for text
+> - active: boolean
+> -	onClick: function to be executed on click on Card component
+
+### **GiftsList component**
+> GiftsList component includes a general title and a list of Cards components. The customizables parameters are:
+> - backgroundColor: string with color for background
+> - color: string witho color for text
+> - title: string
+> - gifts: list or array of gifts to include in the list (may include parameters of Card components and Badge components)
+
+
+
+
 
 ## Installation
 
