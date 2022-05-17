@@ -25,7 +25,7 @@ DefaultExample.args = {
 			],
 		},
 		{
-			...CardStories.Default.args,
+			...CardStories.Active.args,
 			title: 'Other discounts',
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum sagittis nibh. Vestibulum interdum quam magna, at posuere erat eleifend eget. Donec a eros id ex finibus egestas. Fusce et molestie ligula. Aenean sed enim placerat quam sollicitudin feugiat non sit amet arcu. Vivamus vitae sapien ac elit ullamcorper rutrum.',
